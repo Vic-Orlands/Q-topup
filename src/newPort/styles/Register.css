@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+label {
+	margin: 20px 0 0 48px;
+}
+
+input[type=text],
+select {
+	width: 500px;
+	padding: 12px 20px;
+	margin: 8px auto;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type=submit] {
+	width: 20%;
+	background-color: rgb(33, 73, 129);
+	color: white;
+	padding: 14px 20px;
+	margin: 10px 40% 0px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+input[type=submit]:hover {
+	background-color: rgb(10, 39, 80);
+}
+
+.registerContainer {
+	background-color: #f2f2f2;
+}
+
+.registerField {
+	width: 50%;
+	margin: auto;
+	border: 1px solid rgb(172, 168, 168);
+}
+
+.registerField input:focus {
+	border: 2px solid rgb(33, 73, 129);
+}
+
+.registerField h2 {
+	margin: 20px 0 -20px 0;
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+.registerField p {
+	text-align: center;
+	margin-top: -30px;
+}
+
+.registerField p span {
+	color: rgb(33, 73, 129);
+}
+
+.registerField p span:hover {
+	color: rgb(6, 32, 70);
+}
+
+.registerField form {
+	border-radius: 5px;
+	padding: 40px;
+}
