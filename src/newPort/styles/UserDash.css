@@ -1,3 +1,243 @@
-.dashNav {
-    background-color: ;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* -----------------------------gifLoad styling starts here----------------------------- */
+
+.gifLoad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	width: 100%;
+}
+
+.gifLoad img {
+	width: 400px;
+	margin-top: -160px;
+}
+
+.gifLoad h1 {
+	font-size: 30px;
+	margin-top: -100px;
+	color: rgb(5, 30, 66);
+}
+
+/* -----------------------------gifLoad styling ends here----------------------------- */
+
+/* ----------------------user dashboard styling begins here---------------------------- */
+
+.dashBody Nav .firstNav {
+	display: none;
+}
+
+.dashBody Nav .secondNav {
+	background: rgb(5, 64, 146);
+	padding: 10px 0 20px 0;
+}
+
+.dashBody Nav .secondNav {
+	color: white;
+}
+
+.dashBody Nav .secondNav ul li {
+	color: white;
+}
+
+.dashBody Nav .secondNav ul li:hover {
+	color: tomato;
+}
+
+.dashBody Nav .secondNav ul li .dropdownContent {
+	background: rgb(5, 64, 146);
+}
+
+.dashBody Nav .secondNav ul li .dropdownContent li {
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+/* ----------------------user dashboard styling ends here---------------------------- */
+
+/* ----------------------dashboard background image styling starts here----------------------------- */
+
+.dashImgBackground {
+	background: rgb(33, 73, 129) url("../assets/nav1.jpg") no-repeat scroll right;
+	background-blend-mode: soft-light;
+	background-size: cover;
+	height: 25vh;
+	z-index: -1;
+	margin-top: -20px;
+}
+
+.dashImgBackground h2 {
+	color: rgb(255, 0, 0);
+	font: 18px sans-serif;
+	padding: 75px 67px;
+}
+/* ---------------------dashboard background image styling ends here----------------------------- */
+
+/* ----------------------user dashboard body styling starts here---------------------------- */
+.dash-user-body {
+	background: #fff;
+	border: 1px solid #ffffff;
+	width: 90%;
+	margin: -60px auto;
+	border-radius: 4px;
+	padding-bottom: 45px;
+}
+
+.dash-user-body .wallet {
+	display: flex;
+	height: 20vh;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border-radius: 6px;
+}
+
+.dash-user-body div > div {
+	width: 26vw;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dash-user-body h2 {
+	font: 24px sans-serif;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 40px;
+	padding: 10px 20px;
+	line-height: 10vh;
+	color: rgb(5, 30, 66);
+}
+
+.dash-user-body span {
+	font: 18px sans-serif;
+	padding-left: 5px;
+	color: rgb(248, 26, 26);
+}
+
+.dash-user-body span:hover {
+	text-decoration: underline;
+	text-decoration-color: rgb(248, 26, 26);
+}
+
+.dash-user-body .dashLink:hover {
+	text-decoration: none;
+}
+
+.dash-user-body .dashLink:focus {
+	outline: none;
+}
+
+/* ----------------------------styling the wallet box----------------------------- */
+.wallet div {
+	margin-bottom: 30px;
+}
+
+.wallet p {
+	background: green;
+	color: white;
+	width: 50px;
+	margin: 10px;
+	font-size: 12px;
+	padding: 2px 5px 2px 7px;
+	border-radius: 2px;
+}
+
+.wallet .sms {
+	width: 41px;
+}
+
+.wallet .transact {
+	width: 88px;
+}
+
+.wallet h4 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.wallet a {
+	font: 12px sans-serif;
+	padding-left: 5px;
+}
+
+/* ------------------------------mobile responsiveness starts here-------------------------------------- */
+
+@media screen and (max-width: 768px) {
+	/* -----------------------------gifLoad styling----------------------------- */
+	.gifLoad {
+		height: 80vh;
+	}
+
+	.gifLoad img {
+		width: 260px;
+		margin-top: 0;
+	}
+
+	.gifLoad h1 {
+		font-size: 22px;
+		margin-top: -70px;
+	}
+
+	/* -----------------------------nav styling----------------------------- */
+	.dashBody Nav {
+		padding-bottom: 20px;
+	}
+
+	/* -----------------------------dash-user-body styling----------------------------- */
+	.dashImgBackground h2 {
+		font: 14px sans-serif;
+		padding: 75px 28px;
+	}
+
+	.dash-user-body h2 {
+		font: 20px sans-serif;
+		margin: 20px;
+		padding: 0px 20px;
+		line-height: 8vh;
+	}
+
+	.dash-user-body span {
+		font: 10px sans-serif;
+		padding-left: 0px;
+	}
+
+	/* -----------------------------wallet styling----------------------------- */
+	.dash-user-body .wallet {
+	display: flex;
+	height: 20vh;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	border-radius: 6px;
+}
+
+.dash-user-body div > div {
+	width: 40vw;
+}
+
+.wallet p {
+	width: 45px;
+	margin: 5px;
+	font-size: 10px;
+}
+
+.wallet .sms {
+	width: 35px;
+}
+
+.wallet .transact {
+	width: 70px;
+}
+
+.wallet h4 {
+	text-align: center;
+	font-size: 22px;
+	margin: 20px;
+}
+
+.wallet a {
+	font: 10px sans-serif;
+}
 }

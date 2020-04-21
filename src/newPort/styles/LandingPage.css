@@ -18,7 +18,6 @@
 .landPage .landArticle1 {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 25% 100px auto;
 	margin: 20px 100px;
 }
 
@@ -51,8 +50,7 @@
 
 .landPage .landArticle2 {
 	display: flex;
-	grid-template-columns: repeat(4, auto);
-	padding-left: 80px;
+	justify-content: space-evenly;
 	margin-bottom: 100px;
 }
 
@@ -83,7 +81,7 @@
 }
 
 .landPage .landArticle2 div {
-	margin: 20px 20px;
+	margin: 20px 0;
 	width: 260px;
 	background: white;
 	border: 1px solid rgb(211, 204, 204);
@@ -154,12 +152,11 @@ th {
 	color: rgb(233, 58, 58);
 }
 
-/* ------------------------------third section styling starts here-------------------------------------- */
+/* ------------------------------fourth section styling starts here-------------------------------------- */
 
 .landPage .landArticles4 {
 	display: flex;
-	grid-template-columns: repeat(4, auto);
-	padding-left: 80px;
+	justify-content: space-evenly;
 	margin-bottom: 100px;
 }
 
@@ -180,7 +177,7 @@ th {
 }
 
 .landPage .landArticles4 div {
-	margin: 20px 20px;
+	margin: 20px 0;
 	width: 260px;
 	background: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.53);
@@ -188,4 +185,78 @@ th {
 
 .landPage .landArticles4 div hr {
 	border: 1px solid #000;
+}
+
+/* -------------------------mobile responsiveness styling begins here----------------------------------- */
+
+@media screen and (max-width: 768px) {
+	/* ------------------------------first landing-------------------------------------- */
+
+	.landPage h2 {
+		font: 14px sans-serif;
+	}
+
+	.landPage .landArticle1 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin-bottom: 50px;
+	}
+
+	.landPage .landArticle1 div h2 {
+		margin-bottom: 10px;
+	}
+
+	.landPage .landArticle1 div p {
+		line-height: 20px;
+	}
+
+	/* ------------------------------second landing-------------------------------------- */
+
+	.landPage .landArticle2 {
+		flex-wrap: wrap;
+	}
+
+	.landPage .landArticle2 h6 {
+		margin-bottom: 20px;
+		font: 14px sans-serif;
+	}
+
+	/* ------------------------------third landing-------------------------------------- */
+
+	.landPage .landArticles3 h1 {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
+	.landPage .landArticles3 h3 {
+		font-size: 14px;
+	}
+
+	.landPage .landArticles3 h5 {
+		font-size: 12px;
+	}
+
+	.landPage .landArticles3 table {
+		width: 95%;
+	}
+
+	.landPage .landArticles3 th {
+		height: 60px;
+		font-size: 10px;
+	}
+
+	.landPage .landArticles3 td {
+		font-size: 10px;
+	}
+
+	.landPage .landArticles3 table tr td:nth-child(4):hover {
+		color: rgb(94, 23, 23);
+	}
+
+	/* ------------------------------fourth landing-------------------------------------- */
+
+	.landPage .landArticles4 {
+	flex-wrap: wrap;
+}
+
 }

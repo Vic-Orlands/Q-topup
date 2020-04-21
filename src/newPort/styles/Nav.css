@@ -78,44 +78,106 @@
 	display: none;
 	position: absolute;
 	background-color: lightgrey;
-    min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	margin-top: 8px;
-    padding: 12px 16px;
-    z-index: 1;
+	padding: 12px 16px;
+	z-index: 1;
 }
 
 .dropdown:hover .dropdownContent {
-display: block;
+	display: block;
 }
 
 /* ----------------------toggling bar animation styling------------------------- */
 
-/* .barContainer {
+.mobileNav {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.firstNav {
+		display: none;
+	}
+
+	.secondNav {
+		display: none;
+	}
+
+	.mobileNav {
 		display: block;
-		cursor: pointer;
-		margin: 0px 20px;
+		position: relative;
 	}
 
-	.bar1,
-	.bar2,
-	.bar3 {
-		width: 23px;
+	.nav-links {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 20px;
+		padding-bottom: 150px;
+	}
+
+	.nav-links li {
+		color: white;
+		list-style: none;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+
+	.nav-links li:hover {
+		color: rgb(243, 33, 33);
+		text-decoration: underline;
+	}
+
+	.mobileNavBody {
+		background: rgb(5, 64, 146);
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.mobileNavBody h1 {
+		font-size: 24px;
+		color: white;
+		padding-left: 10px;
+	}
+
+	.mobileNavBody h1 span {
+		font-size: 28px;
+		color: rgb(219, 0, 0);
+	}
+
+	.line {
+		width: 22px;
 		height: 2px;
-		background-color: #f1f1f1;
-		margin: 6px 0;
-		transition: 0.5s ease-out;
+		background: white;
+		margin: 5px;
 	}
 
-	.change .bar1 {
-		transform: rotate(-45deg) translate(-4.5px, 5.5px);
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 2%;
+		top: 50%;
+		transform: translate(-2%, -50%);
 	}
 
-	.change .bar2 {
-		opacity: 0;
+	.nav-links {
+		position: fixed;
+		z-index: 1;
+		background: rgb(5, 64, 146);
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 90% -20%);
+		-webkit-clip-path: circle(100px at 90% -20%);
+		transition: all 1s ease-out;
+		pointer-events: none;
 	}
 
-	.change .bar3 {
-		transform: rotate(45deg) translate(-5.5px, -6.5px);
+	.nav-links.open {
+		clip-path: circle(1000px at 90% -20%);
+		-webkit-clip-path: circle(1000px at 90% -20%);
+		pointer-events: all;
 	}
-}  */
+}

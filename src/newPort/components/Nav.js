@@ -3,24 +3,53 @@ import { NavLink } from 'react-router-dom';
 import { IoIosArrowDown } from 'react-icons/io';
 import '../styles/Nav.css';
 class Nav extends Component {
-	// navContainer = document.querySelector('.navContainer');
+	navlinks = document.getElementById('nav-links');
 
-	// state = {
-	// 	navContainer: false,
-	// 	toggle: false
-	// };
+	state = {
+		navlinks: false
+	};
 
-	// change = (e) => {
-	// 	e.preventDefault();
-	// 	this.setState({
-	// 		navContainer: !this.state.navContainer,
-	// 		toggle: !this.state.toggle
-	// 	});
-	// };
+	drop = (e) => {
+		e.preventDefault();
+		this.setState({
+			navlinks: !this.state.navlinks
+		});
+	};
 
 	render() {
+		const { navlinks } = this.state;
 		return (
 			<nav>
+				{/* --------------------------------------------------------below is the hamburger toggle menu bar on small screens---------------------------------------- */}
+				<div className="mobileNav">
+					<div className="mobileNavBody">
+						<h1>
+							{' '}
+							<span>Q-</span>topup
+						</h1>
+						<div className="hamburger" onClick={this.drop}>
+							<div className="line" />
+							<div className="line" />
+							<div className="line" />
+						</div>
+					</div>
+
+					<ul className={'nav-links ' + (navlinks ? 'open' : '')} id="nav-links">
+						<NavLink to="/">
+							<li>home</li>
+						</NavLink>
+						<li>Buy airtime</li>
+						<li>buy databundle</li>
+						<li>deposit money</li>
+						<li>transfer money</li>
+						<li> CableTV Subscription </li>
+						<li> Electricity Payment </li>
+						<li> Developer's API </li>
+					</ul>
+				</div>
+				{/* -------------------------------the hamburger body ends here------------------------------ */}
+
+				{/* ----------------------below is the nav bar at full laptop screen------------------------------- */}
 				<div className="firstNav">
 					<ul>
 						<li> Contact us </li>
@@ -49,10 +78,9 @@ class Nav extends Component {
 						<li>deposit money</li>
 						<li>transfer money</li>
 
-
 						<li className="dropdown">
 							<span>
-							more options <IoIosArrowDown />{' '}
+								more options <IoIosArrowDown />{' '}
 							</span>
 
 							<div className="dropdownContent">
@@ -63,18 +91,8 @@ class Nav extends Component {
 								<li> Developer's API </li>
 							</div>
 						</li>
-
-
 					</ul>
 				</div>
-
-				{/* --------------------------------------------------------below is the toggle menu bar on small screens---------------------------------------- */}
-				{/* 
-				<div className="barContainer" onClick={this.change}>
-					<div className="bar1" />
-					<div className="bar2" />
-					<div className="bar3" />
-				</div> */}
 			</nav>
 		);
 	}

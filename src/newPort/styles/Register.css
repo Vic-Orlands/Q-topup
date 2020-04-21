@@ -38,11 +38,13 @@ input[type=submit]:hover {
 
 .registerContainer {
 	background-color: #f2f2f2;
+	height: 160vh;
 }
 
 .registerField {
 	width: 50%;
 	margin: auto;
+	margin-bottom: 20px;
 	border: 1px solid rgb(172, 168, 168);
 }
 
@@ -72,4 +74,43 @@ input[type=submit]:hover {
 .registerField form {
 	border-radius: 5px;
 	padding: 40px;
+}
+
+/* ------------------------------mobile responsiveness starts here-------------------------------------- */
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+	.registerContainer {
+		height: 100vh;
+	}
+
+	.registerContainer Nav {
+		padding-bottom: 55px;
+	}
+
+	.registerContainer hr {
+		display: none;
+	}
+
+	.registerField {
+		width: 70%;
+	}
+
+	label {
+		margin: 0;
+	}
+
+	.registerField input[type=text],
+	select {
+		width: 100%;
+		height: 30px;
+		margin: 4px auto;
+		padding: 0;
+	}
+
+	input[type=submit] {
+		width: 42%;
+		padding: 10px;
+		margin: 10px 0 0 30%;
+		font-size: 10px;
+	}
 }

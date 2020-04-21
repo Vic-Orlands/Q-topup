@@ -5,14 +5,12 @@
 	box-sizing: border-box;
 }
 
-
 .imgSection {
-    background: rgb(33, 73, 129) url("../assets/nav2.jpg") no-repeat scroll right;
+	background: rgb(33, 73, 129) url("../assets/nav2.jpg") no-repeat scroll right;
 	background-blend-mode: soft-light;
-    background-size: cover;
+	background-size: cover;
 	height: 70vh;
 	z-index: -1;
-    
 }
 
 .imgSectText {
@@ -47,4 +45,38 @@
 
 .imgSectText button:hover {
 	background-color: rgb(238, 29, 29);
+}
+
+.imgSectText button:focus {
+	outline: none;
+}
+
+/* -------------------------mobile responsiveness styling begins here----------------------------------- */
+
+@media screen and (max-width: 768px) {
+	.imgSection {
+		height: 50vh;
+	}
+
+	.imgSectText {
+		position: absolute;
+		margin: 120px 70px 0px 20px;
+	}
+
+	.imgSectText h3 {
+		font: bold 18px sans-serif;
+	}
+
+	.imgSectText h4 {
+		font-size: 12px;
+	}
+
+	.imgSectText span {
+		font-size: 22px;
+	}
+
+	.imgSectText button {
+		padding: 10px 12px;
+		font: bold 10px sans-serif;
+	}
 }

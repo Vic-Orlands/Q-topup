@@ -1,13 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 .footer {
-    background: rgba(37, 37, 37, 0.972);
-    color: rgb(165, 162, 162);
-    margin-top: 100px;
-    padding-top: 20px;
+	background: rgba(37, 37, 37, 0.972);
+	color: rgb(165, 162, 162);
+	margin-top: 100px;
+	padding-top: 20px;
 }
 
 .footer h1 {
@@ -21,49 +21,80 @@
 }
 
 .footer hr {
-    background: white;
-    width: 77%;
-    margin: auto;
-    margin-bottom: 70px;
+	background: white;
+	width: 77%;
+	margin: auto;
+	margin-bottom: 40px;
 }
 
 .footerText {
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-}
-
-.footFooter {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(8, 8, 8, 0.972);
-    margin-top: 20px;
-    padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
 }
 
 .footerText div:nth-child(even) {
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .footerText div:nth-child(even) p {
-    margin: 20px 30px 0 0;
+	margin: 20px 30px 0 0;
 }
 
 .footerText li {
-    list-style: none;
-    margin: 0 60px 14px -140px;
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.footFooter {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(8, 8, 8, 0.972);
+	margin-top: 20px;
+	padding: 10px;
 }
 
 .footFooter p {
-    margin: auto 20px;
-    font-size: 12px;
+	margin: auto 20px;
+	font-size: 12px;
 }
 
 .footFooter p:nth-child(2) {
-color: rgb(255, 0, 85);
+	color: rgb(255, 0, 85);
 }
 
 .footerText p b {
-    color: rgb(250, 32, 32);
+	color: rgb(250, 32, 32);
+}
+
+/* ------------------------------mobile responsiveness starts here-------------------------------------- */
+
+@media screen and (max-width: 768px) {
+	.footer {
+		padding-top: 20px;
+	}
+
+	.footer h1 {
+		margin: 50px 70px 30px;
+		font-size: 40px;
+	}
+
+	.footer hr {
+		width: 85%;
+		margin-bottom: 20px;
+	}
+
+	.footerText {
+		flex-wrap: wrap;
+		font-size: 10px;
+	}
+
+	.footerText ul {
+		padding-top: 20px;
+	}
+
+	.footFooter p {
+		font-size: 10px;
+	}
 }
