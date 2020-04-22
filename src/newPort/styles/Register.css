@@ -92,18 +92,27 @@ input[type=submit]:hover {
 	}
 
 	.registerField {
-		width: 70%;
+		width: 90%;
+	}
+
+	.registerField h2 {
+		font-size: 1.5rem;
+	}
+
+	.registerField p {
+font-size: .6rem;
 	}
 
 	label {
 		margin: 0;
+		font-size: .6rem;
 	}
 
 	.registerField input[type=text],
 	select {
 		width: 100%;
 		height: 30px;
-		margin: 4px auto;
+		margin: auto;
 		padding: 0;
 	}
 

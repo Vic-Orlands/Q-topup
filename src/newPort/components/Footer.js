@@ -29,7 +29,7 @@ const Footer = () => {
 							<b>Contact Us: </b>
 							Chikezie Peter Maduabuchi <br />
 							<b> Email Address: </b>qtransact@gmail.com <br />
-							<b>Call: </b>09059271231 <br /><b> Contact Us:</b> for complaint, feedback <br/> or unresolved issues
+							<b>Call: </b>09059271231 for complaint, feedback <br/> or unresolved issues
 						</p>
 					</div>
 				</div>
@@ -48,7 +48,7 @@ const Footer = () => {
 			</section>
 
             <section className="footFooter">
-                <p> &copy;Copyright 2020 | Vic Orlands @vicorlands.netlify.com</p>
+                <p> &copy;Copyright 2020 | Vic Orlands <span>@vicorlands.netlify.com</span></p>
 
                 <p> Terms of use | Privacy </p>
             </section>

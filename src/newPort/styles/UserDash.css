@@ -189,13 +189,13 @@
 	/* -----------------------------dash-user-body styling----------------------------- */
 	.dashImgBackground h2 {
 		font: 14px sans-serif;
-		padding: 75px 28px;
+		padding: 110px 20px;
 	}
 
 	.dash-user-body h2 {
-		font: 20px sans-serif;
-		margin: 20px;
-		padding: 0px 20px;
+		font-size: 1.1rem;
+		margin: 15px;
+		padding: 0px 10px;
 		line-height: 8vh;
 	}
 

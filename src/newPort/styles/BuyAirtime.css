@@ -146,7 +146,7 @@
 	/* -----------------------------dash-user-body styling----------------------------- */
 	.airtimeImgBackground h2 {
 		font: 14px sans-serif;
-		padding: 75px 57px;
+		padding: 110px 20px;
 	}
 
 	.airtime-recharge-body {
@@ -161,28 +161,32 @@
 	}
 
 	.airtime-recharge-body form label {
-	font: 12px sans-serif;
-	margin: 10px  0 0 0;
-}
+		font: 12px sans-serif;
+		margin: 10px 0 0 0;
+	}
 
-.airtime-recharge-body form input {
-	width: 100%;
-	height: 40px;
-	margin: 5px auto;
-}
+	.airtime-recharge-body form input {
+		width: 100%;
+		height: 35px;
+		margin: 5px auto;
+	}
 
-.airtime-recharge-body form .select {
-	width: 100%;
-	height: 40px;
-    margin: 5px auto 20px;
-}
+	.airtime-recharge-body form .select {
+		width: 100%;
+		height: 35px;
+		margin: 5px auto 20px;
+	}
 
-.airtime-recharge-body .airtimeBtn {
-	width: 300px;
-	font-size: 14px;
-}
+	.airtime-recharge-body .airtimeBtn {
+		width: 300px;
+		font-size: 14px;
+	}
 
-.airtime-recharge-body .airtime-action {
-	margin: 20px 0 0 0 ;
-}
+	.airtime-recharge-body .airtime-action {
+		margin: 20px 0 0 0;
+	}
+
+	.airtime-recharge-body .airtime-action li {
+		font-size: .7rem;
+	}
 }

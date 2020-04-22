@@ -47,7 +47,7 @@ const LandingPage = () => {
 			<section>
 				<center>
 					<h2> Virtual Top Up </h2>
-					<h4 style={{ fontSize: 18, marginTop: -5 }}> Electronic vending of data and airtime </h4>
+					<h4 className="lA2-h4"> Electronic vending of data and airtime </h4>
 				</center>
 
 				<article className="landArticle2">
@@ -62,7 +62,7 @@ const LandingPage = () => {
 					<div>
 						<img src={require('../assets/airtime.jpeg')} alt="airtime img" />
 						<h3> Buy Airtime </h3>
-						<p> Enjoy huge discount when you purchase airtime</p>
+						<h5> Enjoy huge discount when you purchase airtime</h5>
 
 						<h6 style={{ marginTop: 40 }}>Buy Now</h6>
 					</div>
@@ -92,8 +92,8 @@ const LandingPage = () => {
 					<h5>Price Depends on your membership level</h5>
 				</center>
 
-				<div>
-					<table>
+				<div className="table-responsiveness">
+					<table className="table">
 						<tr>
 							<th>
 								Smart Earner <br /> (Reseller 1)

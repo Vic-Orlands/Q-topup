@@ -38,13 +38,27 @@ class Nav extends Component {
 						<NavLink to="/">
 							<li>home</li>
 						</NavLink>
-						<li>Buy airtime</li>
-						<li>buy databundle</li>
-						<li>deposit money</li>
-						<li>transfer money</li>
-						<li> CableTV Subscription </li>
-						<li> Electricity Payment </li>
-						<li> Developer's API </li>
+						<NavLink to="/login">
+							<li>Buy airtime</li>
+						</NavLink>
+						<NavLink to="/login">
+							<li>buy databundle</li>
+						</NavLink>
+						<NavLink to="/login">
+							<li>deposit money</li>
+						</NavLink>
+						<NavLink to="/login">
+							<li>transfer money</li>
+						</NavLink>
+						<NavLink to="/login">
+							<li> CableTV Subscription </li>
+						</NavLink>
+						<NavLink to="/login">
+							<li> Electricity Payment </li>
+						</NavLink>
+						<NavLink>
+							<li> Developer's API </li>
+						</NavLink>
 					</ul>
 				</div>
 				{/* -------------------------------the hamburger body ends here------------------------------ */}
@@ -73,10 +87,17 @@ class Nav extends Component {
 						<NavLink to="/" className="navlink">
 							<li>home</li>
 						</NavLink>
-						<li>Buy airtime</li>
+						<NavLink to="/login">
+							<li>Buy airtime</li>
+						</NavLink>
+						<NavLink />
 						<li>buy databundle</li>
-						<li>deposit money</li>
-						<li>transfer money</li>
+						<NavLink to="/login">
+							<li>deposit money</li>
+						</NavLink>
+						<NavLink to="/login">
+							<li>transfer money</li>
+						</NavLink>
 
 						<li className="dropdown">
 							<span>
@@ -84,11 +105,17 @@ class Nav extends Component {
 							</span>
 
 							<div className="dropdownContent">
-								<li> CableTV Subscription </li>
+								<NavLink to="/login">
+									<li> CableTV Subscription </li>
+								</NavLink>
 								<hr />
-								<li> Electricity Payment </li>
+								<NavLink to="/login">
+									<li> Electricity Payment </li>
+								</NavLink>
 								<hr />
-								<li> Developer's API </li>
+								<NavLink to="/login">
+									<li> Developer's API </li>
+								</NavLink>
 							</div>
 						</li>
 					</ul>

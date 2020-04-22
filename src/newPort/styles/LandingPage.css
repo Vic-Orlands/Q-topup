@@ -17,7 +17,7 @@
 
 .landPage .landArticle1 {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	margin: 20px 100px;
 }
 
@@ -59,6 +59,11 @@
 	text-align: center;
 	margin-top: 20px;
 	color: rgba(7, 48, 105, 0.904);
+}
+
+.lA2-h4 {
+	font-size: 14px;
+	margin-top: -5px;
 }
 
 .landPage .landArticle2 p {
@@ -191,15 +196,12 @@ th {
 
 @media screen and (max-width: 768px) {
 	/* ------------------------------first landing-------------------------------------- */
-
 	.landPage h2 {
 		font: 14px sans-serif;
 	}
 
 	.landPage .landArticle1 {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		margin-bottom: 50px;
+		margin: 10px 35px 50px 35px;
 	}
 
 	.landPage .landArticle1 div h2 {
@@ -208,12 +210,39 @@ th {
 
 	.landPage .landArticle1 div p {
 		line-height: 20px;
+		font-size: 12px;
 	}
 
 	/* ------------------------------second landing-------------------------------------- */
-
 	.landPage .landArticle2 {
 		flex-wrap: wrap;
+	}
+
+	.landPage .landArticle2 h3 {
+		font: bold 15px sans-serif;
+	}
+
+	.lA2-h4 {
+		font-size: 12px;
+	}
+
+	.landPage .landArticle2 p {
+		font-size: 13px;
+		font-weight: normal;
+	}
+
+	.landPage .landArticle2 h6 {
+		font-size: 16px;
+	}
+
+	.landPage .landArticle2 div {
+		flex-grow: .2;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.landPage .landArticle2 div img {
+		width: 100%;
+		height: 190px;
 	}
 
 	.landPage .landArticle2 h6 {
@@ -256,7 +285,14 @@ th {
 	/* ------------------------------fourth landing-------------------------------------- */
 
 	.landPage .landArticles4 {
-	flex-wrap: wrap;
-}
+		flex-wrap: wrap;
+	}
 
+	.landPage .landArticles4 h2 {
+		font-size: .6rem;
+	}
+
+	.landPage .landArticles4 p {
+		font-size: .6rem;
+	}
 }
