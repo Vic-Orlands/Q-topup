@@ -15,7 +15,7 @@ const customStyles = {
 	}
 };
 
-const BuyAirtime = () => {
+const BuyData = () => {
 	let subtitle;
 	const [ modalIsOpen, setIsOpen ] = useState(false);
 
@@ -36,11 +36,11 @@ const BuyAirtime = () => {
 			<Nav />
 
 			<div className="airtimeImgBackground">
-				<h2> MY DASHBOARD/ BUY AIRTIME </h2>
+				<h2> MY DASHBOARD/ BUY DATA </h2>
 			</div>
 
 			<section className="airtime-recharge-body">
-				<h2> Buy Airtime </h2>
+				<h2> Buy Data </h2>
 
 				<div className="airtime-img-container">
 					<div className="airtime-img">
@@ -98,7 +98,7 @@ const BuyAirtime = () => {
 					</ul>
 				</div>
 
-				<Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} style={customStyles}>
+				<Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} style={customStyles}  className="YouClass" overlayClassName="YouClass">
 					<div className="order-modal">
 						<h2 ref={(_subtitle) => (subtitle = _subtitle)}> Order Summary </h2>
 						<IoIosClose onClick={closeModal} className="close-modal" />
@@ -145,4 +145,4 @@ const BuyAirtime = () => {
 		</section>
 	);
 };
-export default BuyAirtime;
+export default BuyData;

@@ -1,7 +1,10 @@
 import React from 'react';
+import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 import '../styles/LandingPage.css';
 
 const LandingPage = () => {
+
+
 	return (
 		<section className="landPage">
 			<section>
@@ -9,6 +12,12 @@ const LandingPage = () => {
 					<h2> How it works </h2>
 				</center>
 
+				<ScrollUpButton
+				className="scroll"
+					EasingType="easeOutCubic"
+					AnimationDuration={400}
+					style={{ borderRadius: 50, padding: '0 6px', background: 'rgb(5, 104, 146)' }}
+				/>
 				<article className="landArticle1">
 					<div>
 						<h2>CREATE AN ACCOUNT</h2>
@@ -62,7 +71,7 @@ const LandingPage = () => {
 					<div>
 						<img src={require('../assets/airtime.jpeg')} alt="airtime img" />
 						<h3> Buy Airtime </h3>
-						<h5> Enjoy huge discount when you purchase airtime</h5>
+						<p> Enjoy huge discount when you purchase airtime</p>
 
 						<h6 style={{ marginTop: 40 }}>Buy Now</h6>
 					</div>
@@ -145,7 +154,7 @@ const LandingPage = () => {
 				</center>
 
 				<article className="landArticles4">
-					<div style={{background: 'yellow', color: '#000' }}>
+					<div style={{ background: 'yellow', color: '#000' }}>
 						<h2>MTN</h2>
 						<hr />
 						<p>₦180-500MB</p>
@@ -163,7 +172,7 @@ const LandingPage = () => {
 						<p>₦69000-250GB (3months)</p>
 					</div>
 
-				<div style={{background: 'red', color: '#fff' }} >
+					<div style={{ background: 'red', color: '#fff' }}>
 						<h2>AIRTEL</h2>
 						<hr />
 
@@ -182,7 +191,7 @@ const LandingPage = () => {
 						<p>₦14000-110GB</p>
 					</div>
 
-					<div style={{background: 'rgba(71, 134, 8, 0.98)', color: "#000"}}>
+					<div style={{ background: 'rgba(71, 134, 8, 0.98)', color: '#000' }}>
 						<h2>ETISALAT</h2>
 						<hr />
 
@@ -199,11 +208,11 @@ const LandingPage = () => {
 						<p>₦1800-4.5GB </p>
 						<p>₦3600-11GB </p>
 						<p>₦4500-15GB </p>
-						<p>₦9000-40GB  </p>
+						<p>₦9000-40GB </p>
 						<p>₦13500-75GB </p>
 					</div>
 
-					<div style={{background: 'green', color: '#fff'}}>
+					<div style={{ background: 'green', color: '#fff' }}>
 						<h2>GLO</h2>
 						<hr />
 

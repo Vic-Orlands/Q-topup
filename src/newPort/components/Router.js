@@ -4,8 +4,10 @@ import DataConnect from './DataConnect';
 import Register from './Register';
 import Login from './Login';
 import UserDash from './UserDash';
-import BuyAirtime from './BuyAirtime';
+import Deposit from './Deposit';
 import BulkSms from './BulkSms';
+import BuyAirtime from './BuyAirtime';
+import BuyData from './BuyData';
 
 const Router = () => {
 	return (
@@ -16,8 +18,10 @@ const Router = () => {
                     <Route path="/register" component={Register} />
                     <Route path="/login" component={Login} />
 					<Route path="/udash" component={UserDash} />
-					<Route path="/airtime" component={BuyAirtime} />
+					<Route path="/deposit" component={Deposit} />
 					<Route path="/sms" component={BulkSms} />
+					<Route path="/airtime" component={BuyAirtime} />
+					<Route path="/data" component={BuyData} />
 				</Switch>
 			</div>
 		</BrowserRouter>

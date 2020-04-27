@@ -5,7 +5,7 @@ import '../styles/Footer.css';
 
 const Footer = () => {
 	return (
-		<footer className="footer">
+		<footer className="footer" id="footer">
 			<h1>
 				{' '}
 				<span>Q-</span>topup

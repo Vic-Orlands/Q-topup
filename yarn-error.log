@@ -1,0 +1,68 @@
+Arguments: 
+  /home/moses/.nvm/versions/node/v10.16.3/bin/node /home/moses/.nvm/versions/node/v10.16.3/bin/yarn add react-modal
+
+PATH: 
+  /home/moses/.nvm/versions/node/v10.16.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/moses/Android/Sdk/emulator:/home/moses/Android/Sdk/tools:/home/moses/Android/Sdk/tools/bin:/home/moses/Android/Sdk/platform-tools:/home/moses/Android/Sdk/emulator:/home/moses/Android/Sdk/tools:/home/moses/Android/Sdk/tools/bin:/home/moses/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  10.16.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-icons/-/react-icons-3.10.0.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:162:17)
+
+npm manifest: 
+  {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "aos": "^2.3.4",
+      "axios": "^0.19.0",
+      "body-parser": "^1.19.0",
+      "bootstrap": "^4.4.1",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "mongoose": "^5.7.12",
+      "react": "^16.9.0",
+      "react-bootstrap": "^1.0.0-beta.17",
+      "react-dom": "^16.9.0",
+      "react-icons": "^3.8.0",
+      "react-router-dom": "^5.0.1",
+      "react-scripts": "^3.4.0",
+      "react-scroll-up-button": "^1.6.4"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

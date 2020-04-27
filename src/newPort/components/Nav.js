@@ -66,7 +66,9 @@ class Nav extends Component {
 				{/* ----------------------below is the nav bar at full laptop screen------------------------------- */}
 				<div className="firstNav">
 					<ul>
-						<li> Contact us </li>
+						<a href="#footer">
+							<li> Contact us </li>
+						</a>
 						<NavLink to="/register" className="navlink">
 							{' '}
 							<li>Register </li>
@@ -87,15 +89,16 @@ class Nav extends Component {
 						<NavLink to="/" className="navlink">
 							<li>home</li>
 						</NavLink>
-						<NavLink to="/login">
+						<NavLink to="/login" className="navlink">
 							<li>Buy airtime</li>
 						</NavLink>
-						<NavLink />
-						<li>buy databundle</li>
-						<NavLink to="/login">
+						<NavLink to="/login" className="navlink">
+							<li>buy databundle</li>
+						</NavLink>
+						<NavLink to="/login" className="navlink">
 							<li>deposit money</li>
 						</NavLink>
-						<NavLink to="/login">
+						<NavLink to="/login" className="navlink">
 							<li>transfer money</li>
 						</NavLink>
 
@@ -105,15 +108,15 @@ class Nav extends Component {
 							</span>
 
 							<div className="dropdownContent">
-								<NavLink to="/login">
+								<NavLink to="/login" className="navlink">
 									<li> CableTV Subscription </li>
 								</NavLink>
 								<hr />
-								<NavLink to="/login">
+								<NavLink to="/login" className="navlink">
 									<li> Electricity Payment </li>
 								</NavLink>
 								<hr />
-								<NavLink to="/login">
+								<NavLink to="/login" className="navlink">
 									<li> Developer's API </li>
 								</NavLink>
 							</div>

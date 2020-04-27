@@ -5,6 +5,32 @@
 	box-sizing: border-box;
 }
 
+.navHost {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.sticky {
+position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .landPage {
+  padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .firstNav {
 	background: rgb(5, 64, 146);
 	line-height: 40px;
@@ -25,6 +51,10 @@
 	font-size: 11px;
 	text-transform: uppercase;
 	margin-right: 150px;
+}
+
+.firstNav ul a{
+	text-decoration: none;
 }
 
 .firstNav ul li {

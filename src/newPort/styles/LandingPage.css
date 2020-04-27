@@ -196,6 +196,11 @@ th {
 
 @media screen and (max-width: 768px) {
 	/* ------------------------------first landing-------------------------------------- */
+	.scroll {
+		display: block;
+		padding: 0;
+	}
+
 	.landPage h2 {
 		font: 14px sans-serif;
 	}

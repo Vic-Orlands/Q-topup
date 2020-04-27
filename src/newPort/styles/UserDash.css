@@ -83,7 +83,7 @@
 	background: #fff;
 	border: 1px solid #ffffff;
 	width: 90%;
-	margin: -60px auto;
+	margin: -60px auto 60px;
 	border-radius: 4px;
 	padding-bottom: 45px;
 }
@@ -98,12 +98,12 @@
 
 .dash-user-body div > div {
 	width: 26vw;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 4px 0 rgba(189, 184, 184, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dash-user-body h2 {
 	font: 24px sans-serif;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 4px 0 rgba(189, 184, 184, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
 	margin: 40px;
 	padding: 10px 20px;
 	line-height: 10vh;
@@ -163,6 +163,27 @@
 	padding-left: 5px;
 }
 
+.chkBal {
+	position: absolute;
+	right: 40%;
+	left: 40%;
+	border: 1px solid rgb(201, 193, 193);
+	border-radius: 6px;
+	padding: 20px 10px 10px 10px;
+	margin: 60px auto 80px;
+}
+
+.chkBal p {
+	font: 14px sans-serif;
+	color: rgb(136, 120, 120);
+	text-align: center;
+	margin: 5px;
+}
+
+.chkFont {
+	margin-right: -10px;
+}
+
 /* ------------------------------mobile responsiveness starts here-------------------------------------- */
 
 @media screen and (max-width: 768px) {
@@ -206,38 +227,55 @@
 
 	/* -----------------------------wallet styling----------------------------- */
 	.dash-user-body .wallet {
-	display: flex;
-	height: 20vh;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	border-radius: 6px;
-}
+		display: flex;
+		height: 20vh;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		border-radius: 6px;
+	}
 
-.dash-user-body div > div {
-	width: 40vw;
-}
+	.dash-user-body div > div {
+		width: 80vw;
+		margin: 9px;
+	}
 
-.wallet p {
-	width: 45px;
-	margin: 5px;
-	font-size: 10px;
-}
+	.wallet p {
+		width: 45px;
+		margin: 5px;
+		font-size: 10px;
+	}
 
-.wallet .sms {
-	width: 35px;
-}
+	.wallet .sms {
+		width: 35px;
+	}
 
-.wallet .transact {
-	width: 70px;
-}
+	.wallet .transact {
+		width: 70px;
+	}
 
-.wallet h4 {
-	text-align: center;
-	font-size: 22px;
-	margin: 20px;
-}
+	.wallet h4 {
+		text-align: center;
+		font-size: 22px;
+		margin: 20px;
+	}
 
-.wallet a {
-	font: 10px sans-serif;
-}
+	.wallet a {
+		font: 10px sans-serif;
+	}
+	
+	.chkBal {
+		position: absolute;
+		right: 10%;
+		left: 10%;
+		margin-top: 550px;
+	}
+
+	.chkBal p {
+		font: 12px sans-serif;
+		color: rgb(97, 86, 86);
+	}
+
+	.chkFont {
+		margin-right: -8px;
+	}
 }
