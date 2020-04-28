@@ -42,9 +42,25 @@
 	margin: 20px 30px 0 0;
 }
 
-.footerText li {
+.footerText div ul li {
+	color: rgb(165, 162, 162);
 	list-style: none;
 	padding-bottom: 10px;
+}
+
+.footerText div ul .link {
+	text-decoration: none;
+}
+
+.footerText div ul .link:focus {
+	outline: none;
+}
+
+.footerText div ul li:hover {
+	color: red;
+	list-style: none;
+	transform: translateX(10px);
+	transition: 300ms ease-in-out;
 }
 
 .footFooter {

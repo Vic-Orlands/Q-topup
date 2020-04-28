@@ -36,11 +36,11 @@ const BuyData = () => {
 			<Nav />
 
 			<div className="airtimeImgBackground">
-				<h2> MY DASHBOARD/ BUY DATA </h2>
+				<h2> MY DASHBOARD/ BUY AIRTIME </h2>
 			</div>
 
 			<section className="airtime-recharge-body">
-				<h2> Buy Data </h2>
+				<h2> Buy Airtime </h2>
 
 				<div className="airtime-img-container">
 					<div className="airtime-img">
@@ -98,7 +98,7 @@ const BuyData = () => {
 					</ul>
 				</div>
 
-				<Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} style={customStyles}  className="YouClass" overlayClassName="YouClass">
+				<Modal isOpen={modalIsOpen} onAfterOpen={afterOpenModal} style={customStyles}>
 					<div className="order-modal">
 						<h2 ref={(_subtitle) => (subtitle = _subtitle)}> Order Summary </h2>
 						<IoIosClose onClick={closeModal} className="close-modal" />

@@ -3,8 +3,6 @@ import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 import '../styles/LandingPage.css';
 
 const LandingPage = () => {
-
-
 	return (
 		<section className="landPage">
 			<section>
@@ -16,7 +14,7 @@ const LandingPage = () => {
 				className="scroll"
 					EasingType="easeOutCubic"
 					AnimationDuration={400}
-					style={{ borderRadius: 50, padding: '0 6px', background: 'rgb(5, 104, 146)' }}
+					style={{ borderRadius: 50, padding: '0 6px', background: 'rgb(5, 104, 146)', outline: 'none' }}
 				/>
 				<article className="landArticle1">
 					<div>

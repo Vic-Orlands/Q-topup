@@ -1,18 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Nav from './Nav';
-import '../styles/BuyAirtime.css';
+import '../styles/Deposit.css';
 
 const Deposit = () => {
 	return (
-		<section className="airtimeBody">
+		<section className="deposit">
 			<Nav />
 
 			<div className="airtimeImgBackground">
 				<h2> MY DASHBOARD/ DEPOSIT </h2>
 			</div>
 
-			<section className="airtime-recharge-body">
+			<section className="deposit-recharge-body">
 				<form>
 					<h2> Deposit Money</h2>
 					<label for="number"> Amount to Deposit</label>
@@ -29,7 +29,7 @@ const Deposit = () => {
 					<button className="airtimeBtn">Click to Proceed</button>{' '}
 				</form>
 
-				<div className="airtime-action">
+				<div className="deposit-action">
 					<h5> Quick Actions </h5>
 
 					<ul>

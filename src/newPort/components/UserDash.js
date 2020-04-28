@@ -31,7 +31,7 @@ const UserDash = () => {
 						<h2>
 							{' '}
 							Innocent Chimezie{' '}
-							<NavLink to="/" className="dashLink">
+							<NavLink to="/login" className="dashLink">
 								<span> (Log Out) </span>
 							</NavLink>
 						</h2>

@@ -7,32 +7,32 @@
 
 /* ----------------------user dashboard styling begins here---------------------------- */
 
-.airtimeBody Nav .firstNav {
+.deposit Nav .firstNav {
 	display: none;
 }
 
-.airtimeBody Nav .secondNav {
+.deposit Nav .secondNav {
 	background: rgb(5, 64, 146);
 	padding: 10px 0 20px 0;
 }
 
-.airtimeBody Nav .secondNav {
+.deposit Nav .secondNav {
 	color: white;
 }
 
-.airtimeBody Nav .secondNav ul li {
+.deposit Nav .secondNav ul li {
 	color: white;
 }
 
-.airtimeBody Nav .secondNav ul li:hover {
+.deposit Nav .secondNav ul li:hover {
 	color: tomato;
 }
 
-.airtimeBody Nav .secondNav ul li .dropdownContent {
+.deposit Nav .secondNav ul li .dropdownContent {
 	background: rgb(5, 64, 146);
 }
 
-.airtimeBody Nav .secondNav ul li .dropdownContent li {
+.deposit Nav .secondNav ul li .dropdownContent li {
 	padding-bottom: 4px;
 	padding-top: 4px;
 }
@@ -57,7 +57,7 @@
 /* ---------------------dashboard background image styling ends here----------------------------- */
 
 /* ----------------------user dashboard body styling starts here---------------------------- */
-.airtime-recharge-body {
+.deposit-recharge-body {
 	background: #fff;
 	border: 1px solid #ffffff;
 	width: 80%;
@@ -69,27 +69,27 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.airtime-recharge-body form h2 {
+.deposit-recharge-body form h2 {
 	font-size: 24px;
 	font-weight: bold;
 	color: rgb(102, 101, 101);
 }
 
-.airtime-recharge-body form label {
+.deposit-recharge-body form label {
 	margin: 0px;
 	color: rgb(12, 38, 75);
 	text-transform: uppercase;
 	font: 14px sans-serif;
 }
 
-.airtime-recharge-body form input {
+.deposit-recharge-body form input {
 	display: block;
 	width: 700px;
 	height: 45px;
 	margin: 5px 0 25px 0;
 }
 
-.airtime-recharge-body form .select {
+.deposit-recharge-body form .select {
 	background: white;
 	display: block;
 	width: 700px;
@@ -97,7 +97,7 @@
 	margin: 5px 0 25px 0;
 }
 
-.airtime-recharge-body .airtimeBtn {
+.deposit-recharge-body .airtimeBtn {
 	background: rgb(5, 64, 146);
 	color: white;
 	border: none;
@@ -110,28 +110,28 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.airtime-recharge-body .airtimeBtn:hover {
+.deposit-recharge-body .airtimeBtn:hover {
 	background: rgb(3, 48, 107);
 }
 
-.airtime-recharge-body .airtime-action {
+.deposit-recharge-body .deposit-action {
 	border: 1px solid rgb(5, 64, 146);
 	margin: 20px 0 23px 30px;
 }
 
-.airtime-recharge-body .airtime-action h5 {
+.deposit-recharge-body .deposit-action h5 {
 	border: 1px solid rgb(5, 64, 146);
 	background: rgb(5, 64, 146);
 	color: white;
 	padding: 10px 20px;
 }
 
-.airtime-recharge-body .airtime-action ul {
+.deposit-recharge-body .deposit-action ul {
 	padding: 2px 40px 2px 40px;
 	color: rgb(255, 0, 0);
 }
 
-.airtime-recharge-body .airtime-action li {
+.deposit-recharge-body .deposit-action li {
 	padding: 2px 0;
 }
 
@@ -139,7 +139,7 @@
 
 @media screen and (max-width: 768px) {
 	/* -----------------------------nav styling----------------------------- */
-	.airtimeBody Nav {
+	.deposit Nav {
 		padding-bottom: 20px;
 	}
 
@@ -149,44 +149,44 @@
 		padding: 110px 20px;
 	}
 
-	.airtime-recharge-body {
+	.deposit-recharge-body {
 		width: 90%;
 		padding: 20px;
 		flex-wrap: wrap;
 	}
 
-	.airtime-recharge-body form h2 {
+	.deposit-recharge-body form h2 {
 		font-size: 20px;
 		font-weight: bold;
 	}
 
-	.airtime-recharge-body form label {
+	.deposit-recharge-body form label {
 		font: 12px sans-serif;
 		margin: 10px 0 0 0;
 	}
 
-	.airtime-recharge-body form input {
+	.deposit-recharge-body form input {
 		width: 100%;
 		height: 35px;
 		margin: 5px auto;
 	}
 
-	.airtime-recharge-body form .select {
+	.deposit-recharge-body form .select {
 		width: 100%;
 		height: 35px;
 		margin: 5px auto 20px;
 	}
 
-	.airtime-recharge-body .airtimeBtn {
+	.deposit-recharge-body .airtimeBtn {
 		width: 300px;
 		font-size: 14px;
 	}
 
-	.airtime-recharge-body .airtime-action {
+	.deposit-recharge-body .deposit-action {
 		margin: 20px 0 0 0;
 	}
 
-	.airtime-recharge-body .airtime-action li {
+	.deposit-recharge-body .deposit-action li {
 		font-size: .7rem;
 	}
 }

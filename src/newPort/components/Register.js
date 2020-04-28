@@ -15,11 +15,8 @@ class Register extends Component {
 						<h2> Register </h2>
 					</center>
 					<form>
-						<label for="fname">First Name</label>
+						<label for="fname">Full Name</label>
 						<input type="text" id="fname" name="firstname" required/>
-
-						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname" required/>
 
 						<label for="email">Email</label>
 						<input type="text"  id="email" name="email" required/>

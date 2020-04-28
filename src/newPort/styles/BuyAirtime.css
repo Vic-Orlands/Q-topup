@@ -79,6 +79,7 @@
 .airtime-img-container {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .airtime-recharge-body .airtime-img {
@@ -235,24 +236,45 @@
 	.airtime-recharge-body .airtime-action li {
 		font-size: .7rem;
 	}
+	
+	/* ----------------------------image and modal styling----------------------------------------- */
+	
+	
+	.airtime-recharge-body .airtime-img .img {
+		height: 10rem;
+		width: 15rem;
+	}
+	
+	.airtime-recharge-body .airtime-action {
+		width: 15rem;
+		margin: 30px auto;
+	}
+	
+	.order-modal h2 {
+		font: 1rem sans-serif;
+		margin: auto 0;
+	}
+
+	.order-modal .close-modal {
+	font-size: 1.5rem;
+}
+	
+	.modal-form p {
+		font-size: .7rem;
+	}
+	
+	.modal-form input {
+	height: 28px;
+	width: 160px;
 }
 
-/* ----------------------------image and modal styling----------------------------------------- */
-
-.airtime-img-container {
-	flex-wrap: wrap;
+.modal-form .btn {
+	margin-right: -20px;
 }
 
-.airtime-recharge-body .airtime-img .img {
-	height: 10rem;
-	width: 15rem;
+.modal-form .btn button {
+	font-size: .6rem;
+	margin: 0px 2px;
 }
 
-.airtime-recharge-body .airtime-action {
-	width: 15rem;
-	margin: 30px auto;
-}
-
-.YouClass {
-	/* display: none; */
 }
